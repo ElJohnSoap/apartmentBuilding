@@ -1,8 +1,8 @@
-#include "House.h"
+ï»¿#include "House.h"
 
 House& House::initHouse()
 {
-	cout << "\nÂâåäèòå êîëè÷åñòâî êâàðòèð: \n";
+	cout << "\nÐ’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÐºÐ²Ð°Ñ€Ñ‚Ð¸Ñ€: \n";
 	int s;
 	cin >> s;
 	setSizeHouse(s);
