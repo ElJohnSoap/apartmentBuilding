@@ -24,12 +24,18 @@
     <ClCompile Include="flat.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="House.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="humans.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="flat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="House.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

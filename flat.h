@@ -1,27 +1,31 @@
 ﻿#pragma once
 #include "humans.h"
-class Flat
+
+class Apartment
 {
 private:
-	int numb; // номер квартиры
+	int apartNumb; // номер квартиры
 	int quantityResid; //количество жителей
 	Humans* residents; //массив с людьми
 
 public:
-	Flat(int numbC, int numberOfInhabitantsC) : numb{numbC}, quantityResid{numberOfInhabitantsC}
+	Apartment(int numbC, int numberOfInhabitantsC) : apartNumb{numbC}, quantityResid{numberOfInhabitantsC}
 	{
 		residents = new Humans[quantityResid];
 	}
-	Flat() : Flat(0,0) {}
-	~Flat()
+	Apartment() : Apartment(0,0) {}
+	~Apartment()
 	{
 		delete[]residents;
 	}
-	void printFlat()
-	{
-		cout << "\nНомер квартиры: " << numb;
-		cout << "\nКоличество проживающих: " << quantityResid;
-	}
+
+	void printApart();
+
+	void printFullInfoApart();
+	Apartment& fillApart();
+	Apartment& setApartNumb(int apartNumbC);
+	Apartment& setQuantityResid(int quantityResidC);
+	Apartment& setApartment();
 };
 
 
