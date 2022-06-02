@@ -3,6 +3,7 @@
 class House
 {
 private:
+	
 	int sizeHouse; //количество квартир
 	Apartment* arrApart; //массив с с квартирами
 
@@ -22,5 +23,8 @@ public:
 		sizeHouse = size;
 		return *this;
 	}
+	House& initHouse();
+	void printInfoHouse();
+	
 };
 
